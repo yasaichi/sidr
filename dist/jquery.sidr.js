@@ -285,6 +285,10 @@
       // If the plugin hasn't been initialized yet
       if ( ! data ) {
 
+        // for turbolinks
+        sidrOpened = false;
+        sidrMoving = false;
+
         $this.data('sidr', name);
         if('ontouchstart' in document.documentElement) {
           $this.bind('touchstart', function(e) {
